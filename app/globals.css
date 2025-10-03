@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --font-poppins: "Poppins";
+}
+
+body {
+  font-family: var(--font-poppins);
+}
