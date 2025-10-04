@@ -7,7 +7,7 @@ import DataTable from "./_components/dataTable";
 
 export default function PopulationPage(){
     return (
-        <div className="w-[1120px] h-screen px-5 py-6 ml-60">
+        <div className="w-[1120px] h-screen px-5 py-6">
             <div className="w-full h-auto flex justify-between items-center">
                 <div className="w-158 h-8 flex justify-between bg-[#f1f2f76e] rounded-sm px-2">
                   <input type="search" name="" id="" className="w-156 h-8 rounded-sm px-3 bg-transparent border-none outline-none" placeholder="Search"/>
