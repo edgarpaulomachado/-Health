@@ -1,0 +1,15 @@
+import Aside from "@/components/aside";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
+
+export default function AlertLayout({ children }: { children: React.ReactNode }) {
+  return ( 
+    <div className="flex w-full overflow-x-hidden">
+      <Aside />
+      {children}
+    </div>
+  );
+}

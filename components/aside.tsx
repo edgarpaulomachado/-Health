@@ -28,7 +28,7 @@ export default function Aside(){
                         </div>
                     </Link>
 
-                    <Link href={""}>
+                    <Link href={"./alert"}>
                         <div className="w-50 h-10.5 rounded-sm bg-transparent hover:bg-[#9c9fb3] flex items-center gap-3 px-5 mt-1.5 text-[#273240] hover:text-[#5A6ACF] text-base leading-4">
                             <Image src={Images.Alert} alt={""} width={20} height={20}/>
                             Alertas
