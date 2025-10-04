@@ -37,9 +37,9 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function Chart() {
+export function LineChart() {
   return (
-    <ChartContainer config={chartConfig} className="min-h-[200px] w-full mt-2">
+    <ChartContainer config={chartConfig} className="h-[200px] w-full mt-2">
       <BarChart accessibilityLayer data={chartData}>
         <CartesianGrid vertical={false} />
         <XAxis
@@ -50,7 +50,7 @@ export function Chart() {
           tickFormatter={(value) => value.slice(0, 3)}
         />
         <ChartTooltip content={<ChartTooltipContent />} />
-        <ChartLegend content={<ChartLegendContent />} />
+        <ChartLegend content={<ChartLegendContent />} align="left"/>
         <Bar dataKey="zonas" fill="var(--color-zonas)" radius={4} />
         <Bar dataKey="last_weeks" fill="var(--color-last_weeks)" radius={4} />
       </BarChart>
