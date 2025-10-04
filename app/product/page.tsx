@@ -2,6 +2,8 @@
 
 import { Bell, Search, UserRound } from "lucide-react";
 import React from "react";
+import DropDown from "./_components/dropDown";
+import DataTable from "./_components/dataTable";
 
 export default function PopulationPage(){
     return (
@@ -19,6 +21,16 @@ export default function PopulationPage(){
                     <p className="text-[#1F384C] text-xs leading-3">Edgar Machado</p>
                     <Bell color={"#B0C3CC"}/>
                 </div>
+            </div>
+
+            <div className="w-full h-9.5 flex items-center">
+                <div className="w-119 h-full flex gap-3 mt-20">
+                    <DropDown />
+                </div>
+            </div>
+
+            <div className="mt-30">
+                <DataTable />
             </div>
         </div>
     )
