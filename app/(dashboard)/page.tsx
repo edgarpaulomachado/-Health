@@ -1,6 +1,5 @@
 'use client';
 
-import { Button } from "@/components/ui/button";
 import { ArrowUp, Bell, Search, UserRound } from "lucide-react";
 import React from "react";
 import { Chart } from "./_components/chart";
