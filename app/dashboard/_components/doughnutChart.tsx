@@ -1,7 +1,7 @@
 "use client";
 
 import { Doughnut } from "react-chartjs-2";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, type TooltipItem } from "chart.js";
 import { useMemo } from "react";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
@@ -26,14 +26,13 @@ const options = {
     tooltip: {
       enabled: true,
       callbacks: {
-        label: (context: any) => {
-          const total = context.dataset.data.reduce(
-            (a: number, b: number) => a + b,
-            0
-          );
-          const value = context.raw;
+        label: (context: TooltipItem<'doughnut'>) => {
+          const dataset = context.dataset as { data: number[] };
+          const total = dataset.data.reduce((a: number, b: number) => a + b, 0);
+          const value = context.raw as number;
           const percentage = ((value / total) * 100).toFixed(1);
-          return `${context.label}: ${percentage}%`;
+          const label = Array.isArray(context.label) ? context.label.join(", ") : context.label;
+          return `${label}: ${percentage}%`;
         },
       },
     },

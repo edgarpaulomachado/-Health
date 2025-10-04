@@ -9,7 +9,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   return ( 
     <div className="flex w-full overflow-x-hidden">
       <Aside />
-      {children}
+      {/* when Aside is fixed we offset the content by the Aside width (w-64) to prevent overlap */}
+      <main className="flex-1 min-h-screen bg-transparent ml-64">
+        {children}
+      </main>
     </div>
   );
 }

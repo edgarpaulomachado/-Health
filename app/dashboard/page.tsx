@@ -4,11 +4,12 @@ import { ArrowUp, Bell, Search, UserRound } from "lucide-react";
 import React from "react";
 import { LineChart } from "./_components/lineChart";
 import DoughnutChart from "./_components/doughnutChart";
+import PercentageBubbles from "./_components/PercentageBubbles";
 
 export default function Home() {
   return (
-    <div className="w-[1120px] h-screen px-5 py-6 ml-60">
-      <div className="w-full h-auto flex justify-between items-center">
+    <div className="max-w-[1120px] w-full mx-auto h-screen px-5 py-6">
+      <div className="max-w-[1120px] w-full mx-auto h-auto flex justify-between items-center">
         <div className="w-158 h-8 flex justify-between bg-[#f1f2f76e] rounded-sm px-2">
           <input type="search" name="" id="" className="w-156 h-8 rounded-sm px-3 bg-transparent border-none outline-none" placeholder="Search"/>
           <Search className="mt-2 cursor-pointer" color="gray" size={16}/>
@@ -23,7 +24,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-auto flex justify-between mt-20">
+      <div className="w-full h-auto flex justify-between mt-[33px]">
         
         <div className="w-170 h-81">
           <div className="flex justify-end">
@@ -59,6 +60,8 @@ export default function Home() {
       </div>
 
       <div className="w-full h-0.5 rounded-xs bg-[#C8CBD9] mt-24"></div>
+
+      <PercentageBubbles />
 
     </div> 
   );
