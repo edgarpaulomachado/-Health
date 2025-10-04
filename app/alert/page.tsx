@@ -19,6 +19,8 @@ export default function AlertPage() {
                 <Bell color={"#B0C3CC"}/>
                 </div>
             </div>
+
+            <div className="w-full h-auto flex justify-between"></div>
         </div>
     )
 }

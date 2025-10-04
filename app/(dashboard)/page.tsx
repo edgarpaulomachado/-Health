@@ -33,7 +33,7 @@ export default function Home() {
           <p className="text-black text-sm leading-5.5">Análise de</p>
           <div className="flex gap-1 w-auto h-3 mt-2 items-center">
             <ArrowUp size={14} color={"#149D52"}/>
-            <p className="text-xs leading-3 text-[#149D52]">21%<span className="text-[#737B8B]">vs últimas semanas</span></p>
+            <p className="text-xs leading-3 text-[#149D52]">21% <span className="text-[#737B8B]">vs últimas semanas</span></p>
           </div>
 
           <div className="mt-5">
