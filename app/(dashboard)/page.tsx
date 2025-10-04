@@ -2,7 +2,8 @@
 
 import { ArrowUp, Bell, Search, UserRound } from "lucide-react";
 import React from "react";
-import { Chart } from "./_components/chart";
+import { LineChart } from "./_components/lineChart";
+import DoughnutChart from "./_components/doughnutChart";
 
 export default function Home() {
   return (
@@ -23,9 +24,10 @@ export default function Home() {
       </div>
 
       <div className="w-full h-auto flex justify-between mt-20">
+        
         <div className="w-170 h-81">
           <div className="flex justify-end">
-            <button type="button" className="w-auto h-10 text-[#5A6ACF] text-base bg-[#DDE4F0] rounded-sm px-2 text-center">Reportagens</button>
+            <button type="button" className="w-auto h-10 text-[#5A6ACF] text-base bg-[#DDE4F0] rounded-sm px-2 text-center shadow-xs cursor-pointer">Reportagens</button>
           </div>
           <p className="text-black text-sm leading-5.5 mt-3">Revenue</p>
           <p className="text-black text-sm leading-5.5">Análise de</p>
@@ -35,11 +37,29 @@ export default function Home() {
           </div>
 
           <div className="mt-5">
-            <p className="text-sm leading-5 text-black">Dados de 1-12 de 2025</p>
-            <Chart />
+            <p className="text-sm leading-5 text-[#00000041]">Dados de 1-12 Dez, 2025</p>
+            <LineChart />
           </div>
         </div>
+
+        <div className="w-90.5 h-80.5">
+          
+          <div className="w-full h-auto flex justify-between items-center">
+            <p className="text-sm leading-5.5 text-black">Previsões</p>
+            <button type="button" className="w-auto h-10 text-[#5A6ACF] text-base bg-[#DDE4F0] rounded-sm px-2 text-center shadow-xs cursor-pointer">Ver reportagens</button>
+          </div>
+
+          <p className="text-sm leading-5 text-[#00000041]">Para de 1-12 Dez, 2026</p>
+
+          <div className="flex justify-center items-center">
+            <DoughnutChart />
+          </div>
+
+        </div>
       </div>
+
+      <div className="w-full h-0.5 rounded-xs bg-[#C8CBD9] mt-24"></div>
+
     </div> 
   );
 }
