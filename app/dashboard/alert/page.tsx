@@ -36,20 +36,28 @@ export default function AlertPage() {
             Mutamba
           </h1>
           <p className="text-[#7C828A] mt-3 text-[15px] leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rerum debitis, nostrum cum deserunt ullam officia suscipit nihil consequatur totam quisquam numquam? Sit veniam ullam iusto nostrum quas, laudantium laborum.
+            Zona da mutamba esta em risco de possíveis riscos de surtos nos proximos dias. A probabilidade de hover é de 70%. <span className="text-green-600 cursor-pointer hover:underline">Ver dados relacionados</span>
           </p>
 
           <div className="w-full mt-[26px]">
             <BarChart />
           </div>
-
-          <div className="w-[230px] h-[94px] bg-[#5A67BA] mt-4 mx-auto rounded-md"></div>
-          <div className="w-[230px] h-[94px] bg-[#5A67BA] mt-2 mx-auto rounded-md"></div>
+          {/* <div className="flex gap-2 flex-col -mt-4">
+            <div className="w-[230px] h-[94px] bg-[#5A67BA] mx-auto rounded-md"></div>
+            <div className="w-[230px] h-[94px] bg-[#5A67BA] mx-auto rounded-md"></div>
+          </div> */}
+          
         </div>
 
         {/* Map */}
         <div className="flex justify-center">
-          
+          <iframe
+            className="w-[700px] mx-auto h-[535px] rounded-xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15855.707553098957!2d13.29584045!3d-8.95024105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a52f2a1d8be2e61%3A0x6e5ddc9c11745e89!2sSal%C3%A3o%20de%20Eventos%20Kissonde!5e0!3m2!1spt-BR!2sao!4v1716902123456!5m2!1spt-BR!2sao"
+            // allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
         </div>
       </div>
     </div>
